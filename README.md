@@ -1,66 +1,148 @@
-## Foundry
+# Millionaire's Dilemma 🧠💸
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A privacy-preserving DApp built on the Inco Network that enables secure comparison of encrypted on-chain values — think of it as "Who’s richer?" without revealing actual balances.
 
-Foundry consists of:
+---
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🛠 Getting Started
 
-## Documentation
+### 1. Clone the Repository
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+```bash
+git clone https://github.com/rajat-sharma-Dev/Millionaires-dilemma.git
 ```
 
-### Test
+### 2. Navigate into the Project Directory
 
-```shell
-$ forge test
+```bash
+cd Millionaires-dilemma
 ```
 
-### Format
+### 3. Install Dependencies
 
-```shell
-$ forge fmt
+```bash
+npm install
 ```
 
-### Gas Snapshots
+### 4. Run the Project Locally
 
-```shell
-$ forge snapshot
+```bash
+npm run dev
 ```
 
-### Anvil
+Your app should now be running on [http://localhost:3000](http://localhost:3000).
 
-```shell
-$ anvil
+---
+
+## 📦 Smart Contracts
+
+The smart contracts powering this DApp are maintained in a separate repository:  
+🔗 [Yatch-contracts Repository](https://github.com/rajat-sharma-Dev/Yatch-contracts.git)
+
+Clone them with:
+
+```bash
+git clone https://github.com/rajat-sharma-Dev/Yatch-contracts.git
 ```
 
-### Deploy
+---
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+## 🔐 Key Features
+
+- Encrypted on-chain values using [Inco Network](https://inco.org)
+- Secure comparison logic using `euint256` and `ebool`
+- Zero-leakage frontend — only authorized users can decrypt/view data
+- Real-world privacy use case for Web3 applications
+
+---
+
+## ⚙️ Foundry
+
+[Foundry](https://book.getfoundry.sh/) is a blazing fast, portable, and modular toolkit for Ethereum application development written in Rust. It includes tools for compiling, testing, deploying, and interacting with smart contracts.
+
+### 🧰 Components
+
+- **Forge** – Ethereum testing framework (like Hardhat/Truffle)
+- **Cast** – CLI tool for interacting with contracts, sending transactions
+- **Anvil** – Local Ethereum node (like Ganache)
+- **Chisel** – Solidity REPL for quick prototyping
+
+---
+
+## 📚 Foundry Docs
+
+📖 [https://book.getfoundry.sh](https://book.getfoundry.sh)
+
+---
+
+## 🚀 Foundry Usage
+
+### 🔨 Build Contracts
+
+```bash
+forge build
 ```
 
-### Cast
+### ✅ Run Tests
 
-```shell
-$ cast <subcommand>
+```bash
+forge test
 ```
 
-### Help
+### 🧽 Format Code
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
+```bash
+forge fmt
 ```
+
+### ⛽️ Gas Snapshots
+
+```bash
+forge snapshot
+```
+
+### 🧪 Start Local Node
+
+```bash
+anvil
+```
+
+### 🚀 Deploy Contracts
+
+Update with your RPC and private key:
+
+```bash
+forge script script/Counter.s.sol:CounterScript \
+  --rpc-url <YOUR_RPC_URL> \
+  --private-key <YOUR_PRIVATE_KEY>
+```
+
+### 🛠 Use Cast
+
+```bash
+cast <subcommand>
+```
+
+---
+
+## 🆘 Help
+
+```bash
+forge --help
+anvil --help
+cast --help
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Fork the repo, make changes, and open a pull request.  
+Please test locally before submitting PRs.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
