@@ -6,7 +6,7 @@ This repository contains the smart contracts powering the Millionaire’s Dilemm
 
 ## 🎥 Demo Walkthrough
 
-👉 [Watch the video walkthrough]()  
+👉 [Explanation video](https://www.youtube.com/playlist?list=PLkBjK0MLKIF9a7ytWmdZ5l3Dm0akwBCXZ)  
 📌 *Recommended speed: 1.5x or 1.7x for a smooth learning experience*
 
 ---
